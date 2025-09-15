@@ -1,5 +1,5 @@
 use acpi::error::Error;
-use acpi::{get, MemoryMappedConfiguration};
+use acpi::{MemoryMappedConfiguration, get};
 
 fn main() -> Result<(), Error> {
     let mcfg = get::<MemoryMappedConfiguration>("MCFG")?;
